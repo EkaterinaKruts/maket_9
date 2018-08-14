@@ -8,13 +8,13 @@
 
 
   </head>
-  <body onload="alert ('Hello, I am your pet rock!');">
+  <body onload="setTimeout(function(){ alert ('Hello, I am your pet rock!');}, 100);">
     <div>
       <img id="rockImg" src="images/rock.png" alt="iRock" style="cursor:pointer" onclick = "touchRock()" />
-      <script src="js/script.js">
+
+      <script src="js/script.js" async>
 
       </script>
     </div>
-
   </body>
 </html>
