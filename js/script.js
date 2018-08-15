@@ -1,3 +1,4 @@
+
   var userName;
   function greetUser () {
     alert ('Hello, I am your pet, Rock!');
@@ -17,4 +18,9 @@
           document.getElementById("rockImg").src = "images/rock happy.png";
           setTimeout("document.getElementById('rockImg').src ='images/rock lonely.png';", 60000);
 
+    }
+
+    function resizeRock () {
+      document.getElementById('rockImg').height =
+        (window.innerHeight - 100) * 0.9;
     }
